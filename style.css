@@ -1,0 +1,165 @@
+body{
+    background-color: #0b131e;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#title{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Poppins',sans-serif;
+    color:#dddde0
+}
+
+#cityName{
+    background-color: #202b3b;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #dddde0;
+    width: 800px;
+    height: 35px;
+    padding-left: 15px;
+    border-radius: 10px;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#cityName::placeholder{
+    color: #dddde0;
+}
+
+.city-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    left: 400px;
+    margin-left: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#cityTitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: #dddde0;
+    margin: 0;
+    position: relative;
+    top: 5px;
+}
+
+#time {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    top: 3px;
+    font-size: 20px;
+    color: #4e5762;
+    margin: 0;
+    margin-top: 10px;
+}
+
+#weather{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    position: relative;
+    margin-left: 505px;
+    left: 250px;
+    bottom: 320px;
+    color: #dddde0;
+}
+
+#feelsLike{
+    font-family: 'Poppins', sans-serif;
+    color: #4e5762;
+    font-size: 20px;
+    position: relative;
+    bottom: 352px;
+    left: 730px;
+}
+
+#coverImg{
+    position: relative;
+    top: -175px;
+    margin-left: 980px;
+    height: 150px;
+    width: 150px;
+    display: none;
+}
+
+#weatherDesc{
+    display: block;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    color: #4e5762;
+    font-size: 20px;
+    bottom: 405px;
+    left: 245px;
+    margin-left: 100px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#forecast-card{
+    visibility: hidden;
+    position: relative;
+    bottom: 420px;
+    background: #202b3b;
+    border-radius: 20px;
+    padding: 24px 32px;
+    margin: 40px auto;
+    max-width: 880px;
+    height: 230px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+}
+
+#divTitle{
+    font-family: 'Poppins', sans-serif;
+    color: #707781;
+    font-weight: 600;
+    position: relative;
+    bottom: 20px;
+}
+
+.forecast-card-item {
+    display: inline-block;
+    width: 110px;
+    background: #202b3b;
+    border-radius: 15px;
+    margin: 0 8px;
+    text-align: center;
+    padding: 12px 10px;
+    color: #dddde0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    position: relative;
+    bottom: 25px;
+}
+.forecast-time {
+    font-size: 15px;
+    color: #707781;
+    margin-bottom: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+.forecast-temp {
+    font-size: 22px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    margin-top: -40px;
+}
+.forecast-icon {
+    width: 100px;
+    height: 100px;
+}
+.forecast-desc{
+    font-family: 'Poppins',sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    position: relative;
+    bottom: 35px;
+}
