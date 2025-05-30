@@ -1,10 +1,8 @@
 const searchBtn = document.getElementById('searchBtn');
 const input = document.getElementById('cityName');
-let keyPressed = false
 
 input.addEventListener('keypress', function(event){
     if (event.key === 'Enter'){
-        keyPressed = true
         event.preventDefault();
         let cityName = document.getElementById('cityName').value;
         fetch( `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=10e1658a02095c5cbd18ed9de631ba59`)
@@ -27,6 +25,8 @@ input.addEventListener('keypress', function(event){
                 if (data2.cod !== "200") {
                     return;
                 }
+                document.getElementById('forecast-card').style.visibility = 'visible';
+
                 const forecasts = data2.list;
                 const container = document.getElementById("forecast-cards-container");
                 container.innerHTML = ""; 
@@ -53,8 +53,5 @@ input.addEventListener('keypress', function(event){
                     container.appendChild(card);
                 }
             })
-        if (keyPressed = true){
-            document.getElementById(`forecast-card`).style.visibility = 'visible';
-        }
     }
 });
